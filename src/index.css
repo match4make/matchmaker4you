@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Syne', sans-serif;
+  }
+  
+  .glass-card {
+    background: rgba(23, 15, 38, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card-hover:hover {
+    background: rgba(35, 21, 58, 0.8);
+    border-color: rgba(236, 72, 153, 0.4);
+    box-shadow: 0 12px 40px -10px rgba(168, 85, 247, 0.25);
+    transform: translateY(-4px);
+  }
+
+  .font-century-gothic {
+    font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Outfit', sans-serif;
+  }
+
+  /* Century Gothic Glassmorphic Brand Text - No Glow */
+  .glass-morph-brand {
+    font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, #fce7f3 40%, #f472b6 80%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: none !important;
+  }
+
+  /* Glassmorphic Brand Container Badge */
+  .glass-brand-badge {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  }
+
+  /* Century Gothic Glassmorphic Headline Text - No Glow */
+  .glass-morph-headline {
+    font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    background: linear-gradient(135deg, #ffffff 0%, #fce7f3 35%, #f472b6 70%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: none !important;
+  }
+
+  /* Glassmorphic Headline Container Card */
+  .glass-headline-container {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #f472b6 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-pink {
+    background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn-gradient {
+    background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.35);
+    transition: all 0.25s ease;
+  }
+
+  .btn-gradient:hover {
+    background: linear-gradient(135deg, #f472b6 0%, #a855f7 100%);
+    box-shadow: 0 6px 28px rgba(236, 72, 153, 0.55);
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090510;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a1b40;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+

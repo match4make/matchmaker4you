@@ -1,0 +1,6 @@
+{
+  "name": "Match Maker.Pro",
+  "description": "Modern, premium, mobile-first dating landing page with glassmorphism design, interactive country matching, and affiliate routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
